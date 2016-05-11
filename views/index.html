@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SWAPI Viewer</title>
+  <!-- <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css"> -->
+  <link rel="stylesheet" href="/bower_components/bootswatch-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/bower_components/sweetalert/dist/sweetalert.css">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="/bower_components/angular/angular.min.js"></script>
+  <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="/bower_components/ngSweetAlert/SweetAlert.min.js"></script>
+  <script src="/bower_components/sweetalert/dist/sweetalert.min.js"></script>
+
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="//s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+
+  <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/js/module.js"></script>
+  <script src="/js/controllers.js"></script>
+  <script src="/js/services.js"></script>
+  <script src="/js/main.js"></script>
+</head>
+<body ng-app='routerApp'>
+
+
+
+<div id='navbar' class='nav btn-group' role='group' ng-controller='navControl'>
+  <button type='button' class="btn btn-default" ng-click='reloadPage()'> Restart Animation</button>
+  <button type='button' class="btn btn-default" ui-sref='home'> Home</button>
+  <button type='button' class="btn btn-default" ui-sref='about'>About</button>
+  <button type='button' class="btn btn-default" ui-sref='list({num: 1})'>Page 1</button>
+  <button type='button' class="btn btn-default" ui-sref='list({num: 2})'>Page 2</button>
+  <button type='button' class="btn btn-default" ui-sref='list({num: 3})'>Page 3</button>
+  <button type='button' class="btn btn-default" ui-sref='list({num: 4})'>Page 4</button>
+  <button type='button' class="btn btn-default" ui-sref='list({num: 5})'>Page 5</button>
+  <button type='button' class="btn btn-default" ui-sref='list({num: 6})'>Page 6</button>
+  <button type='button' class="btn btn-default" ui-sref='list({num: 7})'>Page 7</button>
+  <button type='button' class="btn btn-default" ui-sref='list({num: 8})'>Page 8</button>
+  <button type='button' class="btn btn-default" ui-sref='list({num: 9})'>Page 9</button>
+</div>
+
+<hr>
+<!-- Where the templates go! -->
+<div class="content" ui-view></div>
+
+
+
+
+</body>
+<footer>
+  <p>Website by: Alicia Fulk and Dalia Nahol</p>
+</footer>
+</html>

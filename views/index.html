@@ -20,26 +20,63 @@
   <script src="/js/module.js"></script>
   <script src="/js/controllers.js"></script>
   <script src="/js/services.js"></script>
-  <script src="/js/main.js"></script>
 </head>
 <body ng-app='routerApp'>
 
 
 
-<div id='navbar' class='nav btn-group' role='group' ng-controller='navControl'>
-  <button type='button' class="btn btn-default" ng-click='reloadPage()'> Restart Animation</button>
-  <button type='button' class="btn btn-default" ui-sref='home'> Home</button>
-  <button type='button' class="btn btn-default" ui-sref='about'>About</button>
-  <button type='button' class="btn btn-default" ui-sref='list({num: 1})'>Page 1</button>
-  <button type='button' class="btn btn-default" ui-sref='list({num: 2})'>Page 2</button>
-  <button type='button' class="btn btn-default" ui-sref='list({num: 3})'>Page 3</button>
-  <button type='button' class="btn btn-default" ui-sref='list({num: 4})'>Page 4</button>
-  <button type='button' class="btn btn-default" ui-sref='list({num: 5})'>Page 5</button>
-  <button type='button' class="btn btn-default" ui-sref='list({num: 6})'>Page 6</button>
-  <button type='button' class="btn btn-default" ui-sref='list({num: 7})'>Page 7</button>
-  <button type='button' class="btn btn-default" ui-sref='list({num: 8})'>Page 8</button>
-  <button type='button' class="btn btn-default" ui-sref='list({num: 9})'>Page 9</button>
-</div>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top" ng-controller='navControl'>
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Small Business Portal</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+        <ul class="nav navbar-nav">
+          <li class="active"><a ui-sref='home'>Home<span class="sr-only">(current)</span></a></li>
+          <li><a ui-sref='about'>About</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Pages<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a ui-sref='list({num: 1})'>Page 1</a></li>
+              <li><a ui-sref='list({num: 2})'>Page 2</a></li>
+              <li><a ui-sref='list({num: 3})'>Page 3</a></li>
+              <li><a ui-sref='list({num: 4})'>Page 4</a></li>
+              <li><a ui-sref='list({num: 5})'>Page 5</a></li>
+              <li><a ui-sref='list({num: 6})'>Page 6</a></li>
+              <li><a ui-sref='list({num: 7})'>Page 7</a></li>
+              <li><a ui-sref='list({num: 8})'>Page 8</a></li>
+              <li><a ui-sref='list({num: 9})'>Page 9</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Link</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
 
 <hr>
 <!-- Where the templates go! -->

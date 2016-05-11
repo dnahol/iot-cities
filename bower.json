@@ -18,7 +18,7 @@
     "angular": "^1.5.5",
     "angular-ui-router": "^0.2.18",
     "ngSweetAlert": "angular-sweetalert#^1.1.0",
-    "bootswatch-dist": "cyborg",
+    "bootswatch-dist": "united",
     "bootstrap": "^3.3.6"
   },
   "resolutions": {

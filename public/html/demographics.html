@@ -1,0 +1,19 @@
+<h2>Get data on demographics</h2>
+
+<form class="form" role="form" ng-submit="getData()">
+  <div class="checkbox" >
+    <label><input type="checkbox" ng-model="userRequest.age"> Age </label>
+    <label><input type="checkbox" ng-model="userRequest.gender"> Gender </label>
+    <label><input type="checkbox" ng-model="userRequest.income"> Income </label>
+    <label><input type="checkbox" ng-model="userRequest.maritalStatus"> Marital Status </label>
+    <label><input type="checkbox" ng-model="userRequest.ethnicity"> Ethnicity </label>
+    <label><input type="checkbox" ng-model="userRequest.education"> Education </label>
+  </div>
+  <div class="form-group">
+    <label for="address">Enter address, including city and state:</label>
+    <input type="text" class="form-control" id="address" ng-model="userRequest.address">
+  </div>
+
+  <button type="submit" class="btn btn-default">Get Data</button>
+</form>
+

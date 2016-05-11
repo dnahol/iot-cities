@@ -2,23 +2,41 @@
 
 var app = angular.module('routerApp');
 
-app.service('Data', function($http, $q) {
-  var data;
 
-  this.getByPage = num => {
-    // return people by page;
-    // var pageUrl = `//swapi.co/api/people/?page=${num}`
-    var pageUrl = `https://swapi.co/api/people/?page=${num}`
+
+
+// use Pitney Bowes API key data
+
+
+
+app.service('Data', function($http, $q) {
+
+  this.getData = () => {
     return $http({
       method: 'GET',
-      url: pageUrl,
+      url: '/api/getData',
       cache: true
     })
-    .then(res => {
-      return $q.resolve(res.data.results);
-    });
-  };
+  }
 })
+
+
+
+// this.getByPage = num => {
+//   // return people by page;
+//   // var pageUrl = `//swapi.co/api/people/?page=${num}`
+//   var pageUrl = `https://swapi.co/api/people/?page=${num}`
+//   return $http({
+//     method: 'GET',
+//     url: pageUrl,
+//     cache: true
+//   })
+//   .then(res => {
+//     return $q.resolve(res.data.results);
+//   });
+// };
+
+
 //   this.getById = id => {
 //     // returning a promise
 //     // var personUrl = `//swapi.co/api/people/${id}`

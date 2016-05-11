@@ -18,10 +18,10 @@ app.config(function($stateProvider, $urlRouterProvider) {
   .state('demographics', {
     url: '/demographics/',
     templateUrl: '/html/demographics.html',
-    controller: 'mainCtrl',
+    controller: 'demoCtrl',
     resolve: {
       dataObj:
-      function() {
+      function(Data) {
         // return a promise which will resolve to the pageObj
         console.log();
         return ;
@@ -31,7 +31,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
   .state('taxes', {
     url: '/taxes/',
     templateUrl: '/html/taxes.html',
-    controller: 'mainCtrl',
+    controller: 'taxesCtrl',
     resolve: {
       dataObj:
       function() {
@@ -43,7 +43,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
   .state('spending', {
     url: '/spending/',
     templateUrl: '/html/spending.html',
-    controller: 'mainCtrl',
+    controller: 'spendingCtrl',
     resolve: {
       dataObj:
       function() {
@@ -55,7 +55,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
   .state('explore', {
     url: '/explore/',
     templateUrl: '/html/explore.html',
-    controller: 'mainCtrl',
+    controller: 'exploreCtrl',
     resolve: {
       dataObj:
       function() {

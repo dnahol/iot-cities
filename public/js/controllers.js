@@ -13,6 +13,15 @@ app.controller('navControl', function($scope) {
 });
 
 
+app.controller('demoCtrl', function($scope, Data) {
+
+  Data.getData().then(res => {
+      $scope.data = res;
+    });
+
+
+})
+
 app.controller('listCtrl', function($scope, $stateParams, $state, pageObj, People) {
   console.log('listCtrl!');
   //$scope.page = [{},{},{},{}] array of person objects on that page
@@ -32,7 +41,7 @@ app.controller('listCtrl', function($scope, $stateParams, $state, pageObj, Peopl
 
 
 app.controller('mainCtrl', function($scope, $state) {
-  
+
   $scope.getData = function () {
     //userRequest tells us what to show user
 

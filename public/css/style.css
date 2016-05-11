@@ -3,19 +3,19 @@
 }
 
 /* unvisited link */
-a {
+/*a {
   color: #44EEEE;
-}
+}*/
 
 /* mouse over link */
-a:hover {
+/*a:hover {
   color: #FFFF66;
-}
+}*/
 
 /* selected link */
-a:active {
+/*a:active {
   color: orange;
-}
+}*/
 
 html {
     position: relative;
@@ -33,8 +33,7 @@ footer {
     bottom: 0;
     height: 100px;
     width: 100%;
-    overflow:hidden;
-    color: #000;
-    text-shadow: -1px -1px 0 #ff6, 1px -1px 0 #ff6, -1px 1px 0 #ff6, 1px 1px 0 #ff6;
+    /*overflow:hidden;*/
+     /*text-shadow: -1px -1px 0 #ff6, 1px -1px 0 #ff6, -1px 1px 0 #ff6, 1px 1px 0 #ff6;*/
     text-align: center;
 }

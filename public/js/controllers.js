@@ -31,16 +31,20 @@ app.controller('listCtrl', function($scope, $stateParams, $state, pageObj, Peopl
 });
 
 
-app.controller('detailCtrl', function($scope, $state, person) {
-  console.log('detailCtrl!');
+app.controller('mainCtrl', function($scope, $state) {
+  
+  $scope.getData = function () {
+    //userRequest tells us what to show user
 
-  console.log('person: ', person );
-  $scope.person = person;
+
+
+  }
 
 });
 
 app.controller('homeCtrl', function($scope) {
-  console.log('homeCtrl!');
+
+
 
 });
 

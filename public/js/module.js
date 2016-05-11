@@ -15,28 +15,52 @@ app.config(function($stateProvider, $urlRouterProvider) {
     templateUrl: '/html/about.html',
     controller: 'aboutCtrl'
   })
-  .state('list', {
-    url: '/list/:num',
-    templateUrl: '/html/list.html',
-    controller: 'listCtrl',
+  .state('demographics', {
+    url: '/demographics/',
+    templateUrl: '/html/demographics.html',
+    controller: 'mainCtrl',
     resolve: {
-      pageObj:
-      function(People, $stateParams) {
+      dataObj:
+      function() {
         // return a promise which will resolve to the pageObj
-        console.log('$stateParams.num in list: ', $stateParams.num );
-        return People.getByPage($stateParams.num);
+        console.log();
+        return ;
       }
     }
   })
-  .state('detail', {
-    url: '/detail/:id',
-    templateUrl: '/html/detail.html',
-    controller: 'detailCtrl',
+  .state('taxes', {
+    url: '/taxes/',
+    templateUrl: '/html/taxes.html',
+    controller: 'mainCtrl',
     resolve: {
-      person:
-      function(People, $stateParams) {
-        console.log('$stateParams in detail: ', $stateParams);
-       return People.getById($stateParams.id);
+      dataObj:
+      function() {
+        console.log();
+       return ;
+      }
+    }
+  })
+  .state('spending', {
+    url: '/spending/',
+    templateUrl: '/html/spending.html',
+    controller: 'mainCtrl',
+    resolve: {
+      dataObj:
+      function() {
+        console.log();
+       return ;
+      }
+    }
+  })
+  .state('explore', {
+    url: '/explore/',
+    templateUrl: '/html/explore.html',
+    controller: 'mainCtrl',
+    resolve: {
+      dataObj:
+      function() {
+        console.log();
+       return ;
       }
     }
   })

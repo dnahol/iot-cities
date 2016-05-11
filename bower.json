@@ -1,9 +1,10 @@
 {
-  "name": "api-viewer",
+  "name": "iot-cities",
   "description": "",
   "main": "index.js",
   "authors": [
-    "Dalia Nahol <dlznsites@gmail.com>"
+    "Dalia Nahol <dlznsites@gmail.com>",
+    "Alicia Fulk <alicia.fulk@gmail.com>"
   ],
   "license": "ISC",
   "homepage": "",

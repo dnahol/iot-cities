@@ -55,7 +55,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
   .state('explore', {
     url: '/explore/',
     templateUrl: '/html/explore.html',
-    controller: 'exploreCtrl',
+    controller: 'mainCtrl',
     resolve: {
       dataObj:
       function() {

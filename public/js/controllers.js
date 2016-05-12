@@ -40,13 +40,12 @@ app.controller('listCtrl', function($scope, $stateParams, $state, pageObj, Peopl
 });
 
 
-app.controller('mainCtrl', function($scope, $state) {
+app.controller('mainCtrl', function($scope, $state, Data) {
 
   $scope.getData = function () {
     //userRequest tells us what to show user
-
-
-
+    $scope.data = Data.getData($scope.userRequest);
+    console.log($scope.data);
   }
 
 });

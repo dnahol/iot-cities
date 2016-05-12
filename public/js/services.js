@@ -11,11 +11,13 @@ var app = angular.module('routerApp');
 
 app.service('Data', function($http, $q) {
 
-  this.getData = () => {
+  this.getData = (dataRequest) => {
+  	
     return $http({
       method: 'GET',
-      url: '/api/getData',
-      cache: true
+      url: '/api/getData/' + dataRequest.address,
+      cache: true,
+      dataRequest: dataRequest
     })
   }
 })
